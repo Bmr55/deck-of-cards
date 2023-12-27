@@ -31,7 +31,7 @@ class Deck:
     def pop(self) -> Card:
         number_of_cards_left = len(self.cards)
 
-        if number_of_cards_left > 1:
+        if number_of_cards_left > 0:
             deck_index = number_of_cards_left - 1
             next_card = self.cards.pop(deck_index)
             return next_card
